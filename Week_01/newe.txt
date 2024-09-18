@@ -1,0 +1,21 @@
+import pandas as pd
+
+# Load the dataset
+data = pd.read_csv('data.csv')
+
+# Display the first few rows of the dataset
+print("First 5 rows of the dataset:")
+print(data.head())
+
+# Display basic statistics
+print("\nBasic statistics:")
+print(data.describe())
+
+# Check for missing values
+print("\nMissing values in each column:")
+print(data.isnull().sum())
+
+# Group by a specific column and calculate the mean
+grouped_data = data.groupby('Category').mean()
+print("\nMean values grouped by 'Category':")
+print(grouped_data)
