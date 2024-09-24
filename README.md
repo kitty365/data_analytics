@@ -2,7 +2,7 @@
 
 Repository of the Data Analytics module at ZHAW
 
-## Getting Started
+## Getting
 
 ### Creating a Fork of the Course Repository
 
